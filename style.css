@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width:auto;
+    gap:1rem;
+}
+
+.form{
+    margin: 3rem;
+    gap:1rem;
+    width: auto;
+}
+
+input{
+    margin: 3rem;
+    padding:1rem;
+}
+
+button{
+    padding:1rem;
+}
+
+.seat-layout{
+    margin: 4rem;
+    display: flex;
+    gap: .5rem;
+    border:1px solid black;
+    padding:1rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 50%;
+    visibility: hidden;
+    height: 25rem;
+}
+
+.seat{
+    border:1px solid black;
+    padding:.5rem;
+    width: 5rem;
+    height: 3rem;
+}
+
+.seat:hover{
+    transform: scale(.95);
+    cursor: pointer;
+}
+
+.book-btn{
+    width: 10rem;
+    align-self: center;
+    
+}
+
+.cost, #welcome-message{
+    align-self:center ;
+}
+
+.book-btn,.cost{
+    visibility: hidden;
+}
+
+.selected-seat{
+    background-color: aqua;
+  
+    
+}
+
+.selected-seat:hover{
+    cursor: pointer;
+}
+
+.booked-seat{
+    background-color: lightgray;
+}
+
+.booked-seat:hover{
+    transform: scale(1);
+    cursor:initial;
+}
+
+#cost{
+    align-self: center;
+}
